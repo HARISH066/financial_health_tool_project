@@ -9,6 +9,11 @@ DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./financial_health.db")
 if DATABASE_URL.startswith("postgres://"):
     DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
 
+# Use psycopg (version 3) instead of psycopg2
+if DATABASE_URL.startswith("postgresql://") and "psycopg" not in DATABASE_URL:
+    # Add psycopg driver to URL
+    DATABASE_URL = DATABASE_URL.replace("postgresql://", "postgresql+psycopg://", 1)
+
 # Configure engine based on database type
 if "sqlite" in DATABASE_URL:
     engine = create_engine(
