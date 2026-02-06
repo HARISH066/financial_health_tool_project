@@ -1,0 +1,7 @@
+fastapi==0.110.0
+uvicorn==0.29.0
+SQLAlchemy==2.0.28
+python-multipart==0.0.9
+sqlite-sync==0.0.8
+pandas==2.2.0
+requests==2.31.0

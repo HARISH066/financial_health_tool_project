@@ -1,0 +1,27 @@
+.upload-box {
+  display: block;
+  border: 2px dashed #4ade80;
+  padding: 30px;
+  text-align: center;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ecfdf5, #f0fdf4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+  background: #dcfce7;
+  transform: scale(1.01);
+}
+
+.upload-content {
+  font-size: 16px;
+  font-weight: 600;
+  color: #065f46;
+}
+
+.upload-icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 8px;
+}
