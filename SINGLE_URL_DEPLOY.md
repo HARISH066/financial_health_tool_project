@@ -34,6 +34,20 @@ Fill in these settings:
   ```
 - **Instance Type**: Free
 
+### Step 3.5: Environment Variables (Optional)
+
+**No environment variables are required!** The app works out of the box.
+
+However, if you want to use a real LLM for AI insights (optional):
+
+**Option 1: Use Ollama (requires separate server)**
+- `OLLAMA_URL`: Your Ollama server URL
+- `MODEL_NAME`: Model name (e.g., `gemma3:4b`)
+
+**Option 2: Skip it**
+- The app will use rule-based AI insights (works great!)
+- No setup needed ✅
+
 ### Step 4: Deploy
 1. Click **"Create Web Service"**
 2. Wait 5-7 minutes (it builds both frontend and backend)
