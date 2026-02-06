@@ -2,9 +2,10 @@
 
 ## 🚀 Live Links
 
-- **Frontend**: [Add your Vercel/Netlify URL here]
-- **Backend API**: [Add your Render/Railway URL here]
-- **Demo Video**: [Add your YouTube/Drive link here]
+- **GitHub**: https://github.com/HARISH066/financial_health_tool_project
+- **Frontend**: [Add your Vercel/Netlify URL here after deployment]
+- **Backend API**: [Add your Render/Railway URL here after deployment]
+- **Demo Video**: [Add your YouTube/Drive link here after recording]
 
 ## 📋 Problem Statement
 
