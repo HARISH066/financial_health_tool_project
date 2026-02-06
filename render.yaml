@@ -10,3 +10,9 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.0
+
+databases:
+  - name: financial-health-db
+    databaseName: financial_health
+    user: financial_user
+    region: oregon

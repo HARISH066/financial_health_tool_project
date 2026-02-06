@@ -34,19 +34,34 @@ Fill in these settings:
   ```
 - **Instance Type**: Free
 
-### Step 3.5: Environment Variables (Optional)
+### Step 3.5: Add PostgreSQL Database (Required)
 
-**No environment variables are required!** The app works out of the box.
+**IMPORTANT**: The project requires PostgreSQL as per requirements.
 
-However, if you want to use a real LLM for AI insights (optional):
+1. Scroll down to **"Environment Variables"** section
+2. Click **"Add from Database"** button
+3. Click **"Create Database"**
+4. Configure:
+   - **Name**: `financial-health-db`
+   - **Database**: Leave default (PostgreSQL)
+   - **Region**: Same as your web service (Oregon)
+   - **Instance Type**: Free
+5. Click **"Create Database"**
+6. Wait 1-2 minutes for database creation
+7. Back in your web service, click **"Add from Database"** again
+8. Select your database: `financial-health-db`
+9. It will automatically add `DATABASE_URL` environment variable ✅
 
-**Option 1: Use Ollama (requires separate server)**
-- `OLLAMA_URL`: Your Ollama server URL
-- `MODEL_NAME`: Model name (e.g., `gemma3:4b`)
+### Step 3.6: Environment Variables Summary
 
-**Option 2: Skip it**
-- The app will use rule-based AI insights (works great!)
-- No setup needed ✅
+After adding PostgreSQL, you should see:
+- ✅ `DATABASE_URL` - Auto-added from database (PostgreSQL connection string)
+
+**Optional** (for real LLM, not required):
+- `OLLAMA_URL` - If you have Ollama server
+- `MODEL_NAME` - LLM model name
+
+**The app works great with just PostgreSQL!**
 
 ### Step 4: Deploy
 1. Click **"Create Web Service"**
